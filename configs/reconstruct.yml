@@ -1,0 +1,10 @@
+reconstruct:
+  algorithm: bpso
+  bpso:
+    DIST_THR: 8
+    NPROC: 9
+    n_particles: 50
+    iters: 100
+    c1: 2.5
+    c2: 0.5
+    w: 0.9

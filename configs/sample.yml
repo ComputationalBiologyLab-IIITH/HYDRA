@@ -1,0 +1,13 @@
+data:
+  train_split: 0.98
+
+model:
+  checkpoint: ./weights/HYDRA.ckpt
+
+sample:
+  seed: 2023
+  num_samples: 50
+  num_steps: 1000
+  batch_size: 5
+  pos_only: False
+  center_pos_mode: protein

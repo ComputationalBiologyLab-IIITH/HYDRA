@@ -1,0 +1,14 @@
+ATOM      1  H1  CYS     1      -2.923   0.000   0.000  1.00  0.00           H  
+ATOM      2  N   CYS     1      -1.624   0.750   0.000  1.00  0.00           N  
+ATOM      3  CA  CYS     1      -0.325  -0.000   0.000  1.00  0.00           C  
+ATOM      4  CB  CYS     1      -0.325  -1.500   0.000  1.00  0.00           C  
+ATOM      5  SG  CYS     1       0.974  -2.250   0.000  1.00  0.00           S  
+ATOM      6  C   CYS     1       0.974   0.750   0.000  1.00  0.00           C  
+ATOM      7  H2  CYS     1       2.273  -0.000   0.000  1.00  0.00           H  
+ATOM      8  O   CYS     1       0.974   2.250   0.000  1.00  0.00           O  
+CONECT    1    2
+CONECT    2    3
+CONECT    3    4    6
+CONECT    4    5
+CONECT    6    7    8    8
+END

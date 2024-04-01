@@ -1,0 +1,36 @@
+name: HYDRA
+channels:
+  - pytorch
+  - pyg
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - easydict=1.9=py_0
+  - fire=0.5.0=pyhd8ed1ab_0
+  - lightning=2.0.9.post0=pyhd8ed1ab_0
+  - matplotlib-base=3.4.3=py38hf4fb855_1
+  - numpy=1.24.3=py38hf6e8229_1
+  - openbabel=3.1.1=py38hd2c4bc0_3
+  - pandas=1.5.3=py38h417a72b_0
+  - pip=23.2.1=py38h06a4308_0
+  - pyg=2.3.1=py38_torch_1.13.0_cu116
+  - python=3.8.18=h955ad1f_0
+  - python-lmdb=1.4.1=py38h6a678d5_0
+  - pytorch=1.13.1=py3.8_cuda11.6_cudnn8.3.2_0
+  - pytorch-cuda=11.6=h867d48c_1
+  - pytorch-scatter=2.1.0=py38_torch_1.13.0_cu116
+  - pytorch-cluster=1.6.0=py38_torch_1.13.0_cu116
+  - pyyaml=6.0.1=py38h01eb140_1
+  - rdkit=2022.03.2=py38ha829ea6_0
+  - seaborn=0.13.2=hd8ed1ab_0
+  - scipy=1.10.1=py38hf6e8229_1
+  - tqdm=4.65.0=py38hb070fc8_0
+  - yaml=0.2.5=h7f98852_2
+  - pip:
+      - deap==1.4.1
+      - ipykernel==6.25.2
+      - ipywidgets==8.1.1
+      - multiprocess==0.70.16
+      - pyswarms==1.3.0
+      - wandb==0.15.12
