@@ -32,7 +32,7 @@ def sample_peptides_from_dataset(data_idx, dataset, model, trainer, config, out_
     # generate dataset of of a specific pocket
     assert data_idx < len(
         dataset
-    ), f"Data index {data_idx} out of range for validation set of size {len(dataset)}"
+    ), f"Data index {data_idx} out of range for test set of size {len(dataset)}"
     pred_set = torch.utils.data.Subset(dataset, [data_idx] * config.sample.num_samples)
 
     pred_loader = DataLoader(
@@ -103,7 +103,7 @@ def main(train_config_file, sample_config_file, out_dir="./outputs", ndist=1, id
         config=config.data, transform=transform, version=config.data.version
     )
     train_set, val_set = subsets["train"], subsets["test"]
-    print(f"Training: {len(train_set)}, Validation: {len(val_set)}")
+    print(f"Training: {len(train_set)}, Test: {len(val_set)}")
 
     # load model
     model = TARP.load_from_checkpoint(
